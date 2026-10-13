@@ -1,54 +1,75 @@
-﻿# Pauta Solo
+# Pauta Solo
 
-Produto digital para profissionais que cuidam do prÃ³prio negÃ³cio e precisam organizar publicaÃ§Ãµes sem partir de uma pÃ¡gina vazia. O app transforma oferta, pÃºblico e tom de voz em sete pautas editÃ¡veis, com revisÃ£o, exportaÃ§Ã£o e salvamento opcional no navegador.
+Planejador de conteúdo para pequenos negócios. A partir do nome do negócio, do público, da oferta e do tom de voz, o aplicativo prepara sete pautas editáveis, com datas, objetivos e controle de revisão.
 
-AplicaÃ§Ã£o: https://pauta-solo-beatrix.beatrizfpedroso1.chatgpt.site
+[Abrir o aplicativo](https://pauta-solo-beatrix.beatrizfpedroso1.chatgpt.site)
 
-## Ferramenta utilizada
+## Funcionalidades
 
-O Lovable apresentou um painel vazio apÃ³s o login. Com autorizaÃ§Ã£o da pessoa responsÃ¡vel pelo projeto, o app foi implementado com assistÃªncia do Codex e publicado pela ferramenta Sites. NÃ£o foi gerado nem exportado pelo Lovable. Esta entrega registra a diferenÃ§a em relaÃ§Ã£o Ã  ferramenta indicada no desafio.
+- Criar sete pautas para dias consecutivos.
+- Editar títulos e textos e marcar as pautas revisadas.
+- Filtrar o planejamento por situação de revisão.
+- Exportar CSV e imprimir o plano.
+- Salvar, restaurar e apagar uma cópia opcional no navegador.
 
-O produto usa modelos de conteÃºdo locais. NÃ£o chama um modelo generativo nem posta automaticamente nas redes sociais. Todo texto sugerido deve ser revisado antes de publicar.
+## Implementação e limites
 
-## Dor e tese do MVP
+O aplicativo foi desenvolvido em HTML, CSS e JavaScript, com assistência do Codex, e publicado pela ferramenta Sites. O Lovable não carregou nesta sessão; por isso, esta implementação usa uma ferramenta diferente da indicada no desafio da DIO.
 
-A hipÃ³tese Ã© que pequenos negÃ³cios precisam de uma estrutura simples para manter uma rotina de conteÃºdo. A tese inicial Ã© que o usuÃ¡rio consegue gerar e revisar uma semana de pautas com menos esforÃ§o do que organizar tudo do zero. NÃ£o houve entrevista nem validaÃ§Ã£o comercial com clientes nesta etapa.
+A geração usa modelos de conteúdo locais, sem chamadas a uma IA generativa. Os textos precisam de revisão antes da publicação. O aplicativo não publica nas redes sociais, não oferece cadastro e não processa pagamentos.
 
-O MVP prioriza geraÃ§Ã£o, ediÃ§Ã£o e exportaÃ§Ã£o. Cadastro, pagamentos, atendimento e postagem automÃ¡tica ficaram fora do escopo. Uma futura oferta de personalizaÃ§Ã£o poderia ser vendida e atendida manualmente, depois de verificar interesse real.
+Os dados do planejamento são processados no navegador. O salvamento é opcional e não sincroniza dispositivos. Evite incluir dados pessoais de clientes.
 
-## Mercado em cenÃ¡rio ilustrativo
+## Proposta do negócio
 
-Os nÃºmeros sÃ£o premissas para exercitar o raciocÃ­nio, nÃ£o pesquisa de mercado. TAM: 10 mil negÃ³cios a R$ 29 por mÃªs equivalem a R$ 3,48 milhÃµes anuais. SAM: 500 negÃ³cios do segmento inicial equivalem a R$ 174 mil anuais. SOM: 20 clientes iniciais equivalem a R$ 6.960 anuais. Todos os volumes e o preÃ§o precisam ser validados antes de uma decisÃ£o comercial.
+A hipótese do MVP é que uma estrutura simples reduz o esforço de planejar uma semana de conteúdo. Ainda não houve entrevistas com clientes nem validação comercial.
 
-## Business Model Canvas
+### Business Model Canvas
 
-| Bloco | HipÃ³tese |
+| Bloco | Hipótese a validar |
 | --- | --- |
-| Clientes | Profissionais que criam conteÃºdo para o prÃ³prio negÃ³cio |
-| Proposta de valor | Uma semana editÃ¡vel de pautas a partir de uma oferta |
-| Canais | DemonstraÃ§Ãµes diretas, indicaÃ§Ãµes e comunidades locais |
+| Clientes | Profissionais que criam conteúdo para o próprio negócio |
+| Proposta de valor | Uma semana de pautas editáveis a partir de uma oferta |
+| Canais | Demonstrações, indicações e comunidades locais |
 | Relacionamento | Teste gratuito e acompanhamento manual no piloto |
-| Receita | PersonalizaÃ§Ã£o paga a testar, sem cobranÃ§a no MVP |
-| Recursos | AplicaÃ§Ã£o, modelos de conteÃºdo e atendimento |
-| Atividades | Gerar, entrevistar, revisar modelos e acompanhar uso |
-| Parcerias | Comunidades de empreendedores e profissionais de conteÃºdo |
-| Custos | Hospedagem, manutenÃ§Ã£o e tempo de atendimento |
+| Receita | Personalização paga, sem cobrança nesta versão |
+| Recursos | Aplicativo, modelos de conteúdo e atendimento |
+| Atividades | Manter modelos, entrevistar clientes e acompanhar o uso |
+| Parcerias | Comunidades de empreendedores e profissionais de conteúdo |
+| Custos | Hospedagem, manutenção e tempo de atendimento |
 
-## Mega prompt
+### Exercício de dimensionamento de mercado
 
-Crie Pauta Solo em portuguÃªs brasileiro: uma landing page com proposta clara e um planejador gratuito. Receba nome do negÃ³cio, pÃºblico, oferta, data inicial e tom de voz. Gere sete pautas com objetivos diferentes: descoberta, educaÃ§Ã£o, processo, perguntas, oferta, conversa e revisÃ£o. Cada pauta deve ter data, tÃ­tulo, texto editÃ¡vel e indicaÃ§Ã£o de revisÃ£o. Nunca invente depoimentos, preÃ§os ou resultados. Permita filtrar pautas revisadas, exportar CSV e imprimir. Salvar deve ser opcional, somente neste navegador, com restauraÃ§Ã£o e exclusÃ£o da cÃ³pia local. NÃ£o crie login fictÃ­cio, integraÃ§Ãµes, cobranÃ§a ou postagem automÃ¡tica. Explique como os dados sÃ£o usados e ofereÃ§a um exemplo fictÃ­cio. Use design responsivo com fundo creme, verde e tipografia legÃ­vel.
+Os números abaixo são premissas ilustrativas, não resultados de pesquisa. Com preço hipotético de R$ 29 por mês:
 
-## Ajustes e testes
+- TAM: 10.000 negócios, equivalentes a R$ 3.480.000 por ano.
+- SAM: 500 negócios no segmento inicial, equivalentes a R$ 174.000 por ano.
+- SOM: 20 clientes iniciais, equivalentes a R$ 6.960 por ano.
 
-A data inicial foi formatada explicitamente para evitar diferenÃ§as entre configuraÃ§Ãµes regionais. A impressÃ£o recebeu uma saÃ­da de texto prÃ³pria para evitar cortar o conteÃºdo dos campos. O salvamento valida a estrutura dos registros antes de restaurar e mostra que nÃ£o hÃ¡ sincronizaÃ§Ã£o entre dispositivos.
+O público, o preço e a disposição para pagar precisam ser validados. Uma oferta futura de personalização poderia começar com atendimento manual.
 
-VerificaÃ§Ãµes executadas: sintaxe JavaScript; HTTP 200; geraÃ§Ã£o de sete pautas com datas consecutivas; ediÃ§Ã£o do primeiro tÃ­tulo; marcaÃ§Ã£o de uma pauta revisada; salvamento; recarregamento; restauraÃ§Ã£o do tÃ­tulo editado e do contador de revisÃ£o. NÃ£o foi realizado teste com clientes reais. A abertura do CSV e o PDF devem ser conferidos manualmente antes de uso comercial.
+## Prompt de criação
 
-## Executar localmente
+Crie um planejador de conteúdo em português brasileiro. Receba negócio, público, oferta, data inicial e tom de voz. Prepare sete pautas com objetivos diferentes: descoberta, educação, processo, perguntas, oferta, conversa e revisão. Permita editar títulos e textos, marcar revisões, filtrar, exportar CSV e imprimir. Não invente depoimentos, preços ou resultados. Ofereça um exemplo fictício e salvamento opcional no navegador, com restauração e exclusão da cópia local. Explique o tratamento dos dados. Use uma interface responsiva, com rótulos acessíveis e bom contraste.
 
-Sirva a pasta do repositório com qualquer servidor estÃ¡tico. Por exemplo: `python -m http.server 8000`. Abra http://localhost:8000.
+## Validação realizada
 
-## Arquivos e privacidade
+Foram verificados a sintaxe JavaScript, a resposta HTTP 200, a geração de sete datas consecutivas, a edição de um título, a marcação de revisão e o salvamento e a restauração após recarregar a página. A impressão recebeu uma saída própria para evitar cortes nos campos.
 
-`index.html`, `style.css` e `app.js` contÃªm a aplicaÃ§Ã£o. Os dados sÃ£o processados localmente; nÃ£o hÃ¡ backend, credenciais ou envio de dados a servidores. A cÃ³pia opcional em armazenamento local Ã© limitada ao navegador atual. NÃ£o inclua dados pessoais de clientes nas pautas.
+A abertura do CSV e a saída de impressão/PDF ainda precisam de conferência manual. Não houve teste com clientes reais.
 
+## Executar
+
+Abra `index.html` no navegador ou sirva a pasta com um servidor estático já disponível. Por exemplo, se Python estiver instalado:
+
+```sh
+python -m http.server 8000
+```
+
+Acesse http://localhost:8000. O projeto não exige instalar dependências.
+
+## Arquivos
+
+- `index.html`: interface do planejador.
+- `style.css`: apresentação e impressão.
+- `app.js`: geração, edição, exportação e armazenamento local.
